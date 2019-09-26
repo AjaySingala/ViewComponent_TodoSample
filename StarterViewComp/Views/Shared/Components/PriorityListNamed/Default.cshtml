@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ViewComponentSample.Models.TodoItem>
+
+<h3>Priority Items</h3>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+
+<div>
+    @Html.ActionLink("Back", "Index")
+</div>

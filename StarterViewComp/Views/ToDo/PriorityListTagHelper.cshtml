@@ -1,0 +1,10 @@
+﻿@addTagHelper *, StarterViewComp
+
+@*
+    The method signature of PriorityListSync.Invoke is synchronous, 
+    but Razor finds and calls the method with Component.InvokeAsync in the markup file.
+*@
+
+<vc:priority-list-sync max-priority="4" is-done="false">
+
+</vc:priority-list-sync>

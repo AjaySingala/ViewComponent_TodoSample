@@ -1,0 +1,18 @@
+﻿@*@using ViewComponentSample.Models*@
+@using StarterViewComp.ViewComponents
+
+@model IEnumerable<ViewComponentSample.Models.TodoItem>
+
+    <h3>Sync Priority Items - No "ViewComponent" suffix hard-coded</h3>
+    <h2>ToDo nameof</h2>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+
+
+    <div>
+        @Html.ActionLink("Back", "Index")
+    </div>
